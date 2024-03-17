@@ -1,0 +1,39 @@
+body{
+    height: 100vh;width: 100vw;
+    background-image: url(main.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.box{
+    height: 200px;width: 400px;background: rgb(194, 20, 182);
+    opacity: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid rgb(221, 154, 19);
+    /* animation: otp 5s linear 1s 1 forwards ; */
+    filter: drop-shadow(20px 15px 10px rgb(219, 24, 160));
+}
+input{
+    width: 70%;
+    height: 30px;
+}
+button{
+    padding: 10px 20px;
+}
+
+@keyframes otp {
+    0%{
+        height: 0;
+        width: 0;
+    }
+    100%{
+        height: 200px;
+        width: 200px;
+    }
+}
